@@ -1,110 +1,91 @@
-<Html>
-<body>
-	<br>
-	<h1>
 
-Welcome to pizzashirts.org!
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="pizza favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chill_b - pizzashirts.org</title>
+    <link rel="stylesheet" href="pizza.css" />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700,400' rel='stylesheet' type='text/css'>
+  </head>
 
-	</h1>
-	<br>
-	<font size="+1">
+  <body>
+    <header>
+      <h1>Welcome to pizzashirts.org!</h1>
+    </header>
 
-I'm chill_b and I spray paint my pizza design onto t-shirts
+    <main>
+      <p>I'm chill_b and I spray paint my pizza design onto t-shirts</p>
+      <p>A white shirt with a pizza on it is waiting for you</p>
+      <div class="shirts">
+        <img src="img/Pizzafront.png" alt="front">
+        <img src="img/Pizzaback.png" alt="back">
+        <img src="img/hoodie.png" alt="hoodie">
+      </div>
 
-	<br><br>
+      <p>If you have the calling to live the pizza shirt lifestyle then please fill out the form below.</p>
 
-A white shirt with a pizza on it is waiting for you
+      <p>One unisex sized shirt is $13.00 and a hoodie is $25.00. Both prices include shipping in the USA.</p>
+      <p>For questions or special orders, feel free to email me at <a href="mailto:pizzashirts@gmail.com">pizzashirts@gmail.com</a></p>
 
-	<br>
-	<img src="Pizzafront.png" width="400" height="300" alt="front">
-	<img src="Pizzaback.png" width="450" height="300" alt="back">
-	<img src="hoodie.JPG" width="450" height="300" alt="hoodie">
-	<br>
+      <div class="signature">
+        <p>Yours truly,</p>
 
-	
-If you have the calling to live the pizza shirt lifestyle then please fill out the form below.
-	
-	<br><br>
+        <img src="img/frame.png" width="310" height="235" alt="chill_b">
+      </div>
 
-One unisex sized shirt is $13.00 and a hoodie is $25.00. Both prices include shipping in the USA.
+      <p>LIMITED OFFER! V-neck shirts available in size:</p>
+      <del>S</del> <b>M</b> <del>L</del> <del>XL</del> <del>XXL</del>
 
-	<br>
+      <p>Please specify your order below, including what color(s) you want the design to be, and ensure your paypal shipping address is up to date. Thanks!</p>
 
-For questions or special orders, feel free to email me at pizzashirts@gmail.com.
+      <p class="garment">Shirt</p>
+      <section class="payment">
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="business" value="pizzashirts@gmail.com">
+         
+          <input type="hidden" name="on0" value="Delivery method">Delivery method:
+          <select name="os0">
+            <option value="Shipping (USA)">Shipping (USA) $13.00 USD</option>
+            <option value="In person, (only for Bloomington, IN)">In person, (only for Bloomington, IN) $8.00 USD</option>
+          </select>
+       
+          <input type="hidden" name="on1" value="Unisex shirt size">Shirt size (unisex):
+          <input type="text" name="os1">
 
-	<br><br>
+          <input type="hidden" name="on2" value="Pizza color(s)">Choose your pizza design color(s):
+          <input type="text" name="os2">
 
-Yours truly,
-	<br>
-chill_b
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+          ">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+      </section>
 
-	</font>
-	<br><br>
-	<img src="frame.png" width="310" height="235" alt="chill_b">
-	<br><br><a href="gallery.html">Photo Gallery</a><br><br>
+      <p class="garment">Hoodie</p>
+      <section class="payment">
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="on0" value="Delivery method">Delivery method:
+          <select name="os0">
+            <option value="Shipping (USA)">Shipping (USA) $25.00 USD</option>
+            <option value="In person, (only for Bloomington, IN)">In person, (only for Bloomington, IN) $20.00 USD</option>
+          </select>
+        
+          <input type="hidden" name="on1" value="Hoodie color and size">Hoodie size (unisex):
+          <input type="text" name="os1">
+          <input type="hidden" name="on2" value="Pizza color(s)">Choose your pizza design color(s):
+          <input type="text" name="os2">
 
-LIMITED OFFER! V-neck shirts available in size:  
-	<font size="+1">
-		<del>S</del> <b> M </b> <del>L</del>  <del>  XL</del>  <del>  XXL</del>
-	</font>
-	<br>
-
-Please specify your order below, including what color(s) you want the design to be, and ensure your paypal shipping address is up to date. Thanks!
-
-	<br><br><br>
-
-
-
-<table border="2" style="width:20%">
-
-  <tr>
-    <th><font size="+2">Shirt Order Form:</font></th>
-	<th><font size="+2">Hoodie Order Form:</font></th>
-  </tr>
-
-  <tr>
-
-    <td>
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-<input type="hidden" name="cmd" value="_s-xclick">
-<table>
-<tr><td><input type="hidden" name="on0" value="Delivery method:">Delivery method:</td></tr><tr><td><select name="os0">
-	<option value="Shipping (USA)">Shipping (USA) $13.00 USD</option>
-	<option value="In person, (only for Bloomington, IN)">In person, (only for Bloomington, IN) $8.00 USD</option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="Unisex shirt size:">Shirt size (unisex):</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-<tr><td><input type="hidden" name="on2" value="Pizza color(s):">Choose your pizza design color(s):</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-	</td>
-
-	<td>
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-<input type="hidden" name="cmd" value="_s-xclick">
-<table>
-<tr><td><input type="hidden" name="on0" value="Delivery method:">Delivery method:</td></tr><tr><td><select name="os0">
-	<option value="Shipping (USA)">Shipping (USA) $25.00 USD</option>
-	<option value="In person, (only for Bloomington, IN)">In person, (only for Bloomington, IN) $20.00 USD</option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="Hoodie color and size:">Hoodie size (unisex):</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
-<tr><td><input type="hidden" name="on2" value="Pizza color(s):">Choose your pizza design color(s):</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-	</td>
-  </tr>
-</table>
-
-
-
-</body>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+          ">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
